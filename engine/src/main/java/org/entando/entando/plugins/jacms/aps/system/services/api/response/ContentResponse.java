@@ -31,6 +31,10 @@ public class ContentResponse extends AbstractApiResponse {
         return (ContentResponseResult) super.getResult();
     }
     
+    public void setResult(ContentResponseResult result) {
+        super.setResult(result);
+    }
+    
     @Override
     protected AbstractApiResponseResult createResponseResultInstance() {
         return new ContentResponseResult();
